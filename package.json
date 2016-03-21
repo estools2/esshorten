@@ -2,7 +2,7 @@
   "name": "esshorten2",
   "description": "Shorten (mangle) names in JavaScript code",
   "main": "lib/esshorten.js",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "engines": {
     "node": ">=0.6.0"
   },
@@ -21,7 +21,7 @@
     "url": "http://github.com/estools/esshorten.git"
   },
   "dependencies": {
-    "escope": "3.6.0",
+    "escope": "~3.6.0",
     "estraverse": "~4.1.1",
     "esutils": "~2.0.2"
   },
