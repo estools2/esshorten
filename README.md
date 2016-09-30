@@ -1,5 +1,10 @@
 ### esshorten
 
+  * support shortten module script, vars define in module can be shortten
+  * mangle support two new Config: `ecmaVersion`, `sourceType` which is support in **escope**
+
+### esshorten
+
 esshorten provides name mangler, this shorten names in JavaScript code. mangler accepts JavaScript AST and generate modified AST with shortened names.
 
 ### usage
@@ -18,9 +23,8 @@ esshorten.mangle(AST, {
     destructive: false,
     // If false, avoid [JSC bug](https://github.com/mozilla/sweet.js/issues/138) (default: false)
     distinguishFunctionExpressionScope: false,
-    cmd: {
-      globals: ['module', 'require', 'exports', '__filename', '__dirname']
-    }
+    ecmaVersion: 6 //  5 , 6,
+    sourceType: 'script' // script or module, nodejs using module type
 });
 ```
 
